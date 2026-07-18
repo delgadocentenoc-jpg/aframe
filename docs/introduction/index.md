@@ -1,4 +1,77 @@
----
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Escena 1</title>
+
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
+</head>
+
+<body>
+
+<a-scene>
+
+<a-sky color="#87CEEB"></a-sky>
+
+<a-plane
+rotation="-90 0 0"
+width="40"
+height="40"
+color="#6ab04c">
+</a-plane>
+
+<a-box
+position="0 1 -4"
+color="red">
+</a-box>
+
+<a-sphere
+position="3 1 -6"
+radius="1"
+color="blue">
+
+<a-animation
+attribute="rotation"
+to="0 360 0"
+dur="5000"
+repeat="indefinite">
+</a-animation>
+
+</a-sphere>
+
+<a-cylinder
+position="-3 1 -5"
+height="2"
+radius="0.5"
+color="brown">
+</a-cylinder>
+
+<a-cone
+position="-3 3 -5"
+radius-bottom="2"
+height="3"
+color="green">
+</a-cone>
+
+<a-text
+value="Haz clic en el boton para ir a la escena 2"
+position="-3 4 -5"
+color="black">
+</a-text>
+
+<a-link
+href="escena2.html"
+title="Escena 2"
+position="0 1 -2">
+</a-link>
+
+<a-camera position="0 1.6 5"></a-camera>
+
+</a-scene>
+
+</body>
+</html>---
 title: Introduction
 section_title: Introduction
 type: introduction
